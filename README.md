@@ -3,7 +3,7 @@
 
 **Your files. Your Windows PC. Your home network.**
 
-[Русская документация](README.ru.md) · [Installation](#installation) · [Existing installations](#updating-an-existing-installation) · [Build from source](#building-from-source) · [Publication guide](docs/PUBLISHING.md) · [License](LICENSE)
+[Русская документация](LocalCloud/README.ru.md) · [Installation](#installation) · [Existing installations](#updating-an-existing-installation) · [Build from source](#building-from-source) · [Publication guide](docs/PUBLISHING.md) · [License](LICENSE)
 
 LocalCloud turns a Windows computer into a personal file and media library. Run the desktop application, choose a normal folder on a disk, and access the same library from a desktop browser or a phone on your home network. Photos, videos, music and documents stay in ordinary folders you control. There is no hosted storage account, subscription, cloud backend or integrated AI service.
 
