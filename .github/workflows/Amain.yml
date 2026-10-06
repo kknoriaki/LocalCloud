@@ -14,16 +14,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Move files to repository root
+      - name: Move LocalCloud contents to root
+        shell: bash
         run: |
           shopt -s dotglob nullglob
+
+          # Не трогаем корневую .github, чтобы не было конфликта
+          if [ -d "LocalCloud/.github" ]; then
+            cp -a LocalCloud/.github/. .github/
+            rm -rf LocalCloud/.github
+          fi
+
+          # Переносим вообще всё остальное: папки + файлы + скрытые файлы
           cp -a LocalCloud/. .
+
+          # Удаляем старую вложенную папку
           rm -rf LocalCloud
 
-      - name: Commit changes
+      - name: Commit and push
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add -A
-          git commit -m "Move LocalCloud source files to repository root" || exit 0
+
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+
+          git commit -m "Move LocalCloud source files to repository root"
           git push
