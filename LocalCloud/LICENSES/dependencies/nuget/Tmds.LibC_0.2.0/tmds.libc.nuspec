@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Tmds.LibC</id>
+    <version>0.2.0</version>
+    <authors>Tom Deseyn</authors>
+    <owners>Tom Deseyn</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Raw bindings to Linux platform APIs for .NET Core.</description>
+    <copyright>Tom Deseyn</copyright>
+    <tags>libc linux</tags>
+    <repository type="git" url="https://github.com/tmds/Tmds.LibC" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

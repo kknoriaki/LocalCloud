@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "version 1.0.0",
+    "Cyrillic artist search",
+    "missing embedded tags filter",
+    "artist sort query",
+    "preview does not change original",
+    "MP3 audio SHA-256 preserved",
+    "backup byte-for-byte original",
+    "UTF-16 ID3 Cyrillic written to physical MP3",
+    "custom cover embedded",
+    "removed endpoint /content-search",
+    "removed endpoint /content-search/models",
+    "background pause",
+    "filesystem file creation uses incremental indexing",
+    "filesystem modification avoids full scan",
+    "filesystem deletion uses incremental index",
+    "LAN diagnostics report measured probe status",
+    "media byte range streaming",
+    "stale preview rejects changed original"
+  ],
+  "passed": 18
+}

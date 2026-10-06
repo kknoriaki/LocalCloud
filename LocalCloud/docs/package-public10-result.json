@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "schemaVersion": 4,
+  "windowsApps": "x64",
+  "setupBootstrapper": "NSIS Unicode, x86 bootstrapper with x64 prerequisite",
+  "setupPayloadVerifiedFiles": 1254,
+  "changedUpdateFiles": 218,
+  "retainedUpdateFiles": 1036,
+  "uninstallRemovalListMatchesManifest": true,
+  "uninstallSimulationPreservesUnknownMediaDatabaseBackup": true,
+  "uninstallNativeExecution": false,
+  "ffmpegBundled": false,
+  "sourceCodeMatchesWorkingFiles": true,
+  "zipCRCValidated": true,
+  "validationPlatform": "Linux; Windows native and physical iPhone not executed"
+}

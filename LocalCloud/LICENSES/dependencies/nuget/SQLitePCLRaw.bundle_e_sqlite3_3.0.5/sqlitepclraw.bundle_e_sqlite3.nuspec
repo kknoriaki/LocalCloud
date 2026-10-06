@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>SQLitePCLRaw.bundle_e_sqlite3</id>
+    <version>3.0.5</version>
+    <authors>Eric Sink</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <readme>README.md</readme>
+    <description>This 'batteries-included' bundle brings in SQLitePCLRaw.core and the necessary stuff for certain common use cases.  Call SQLitePCL.Batteries.Init().</description>
+    <copyright>Copyright 2014-2026 SourceGear, LLC</copyright>
+    <tags>sqlite</tags>
+    <repository type="git" url="https://github.com/ericsink/SQLitePCL.raw" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="SQLitePCLRaw.config.e_sqlite3" version="3.0.5" exclude="Build,Analyzers" />
+        <dependency id="SQLite" version="3.53.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

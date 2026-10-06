@@ -1,0 +1,42 @@
+LocalCloud public 1.0.0 / schema 4
+
+RU: Для перехода с разработки 1.4.0 нужен именно НОВЫЙ Setup/Update 1.0.0.
+EN: Use the NEW public Setup/Update for development 1.4.0 -> public 1.0.0.
+
+1. Finish important uploads. Keep originals backed up on another disk.
+   Завершите важные загрузки. Сделайте отдельную копию важных оригиналов.
+2. Extract Update outside application/storage. Run Update-LocalCloud.cmd.
+   Распакуйте Update отдельно от программы и библиотеки; запустите CMD.
+3. Select existing application folder (LocalCloud.exe + server), not the library.
+   Выберите существующую папку программы, НЕ папку с фото/музыкой.
+4. Updater checks hashes/space/paths, backs up application/settings/SQLite,
+   stops owned processes and confirms the new version/schema.
+   Проверяются SHA-256/место/пути; сохраняются приложение/настройки/SQLite.
+5. Originals, IDs, albums, favorites, trash and upload sessions are retained.
+   Оригиналы, ID, альбомы, избранное, корзина и состояния загрузок сохраняются.
+6. Open the installed app; the temporary Update directory can then be removed.
+   Открывайте установленное приложение; временную папку Update можно удалить.
+
+The one-time renumbering exception is restricted to development 1.4.0,
+public 1.0.0 and schema 4; newer public versions/schemas cannot downgrade.
+Исключение только 1.4.0 разработка -> 1.0.0 public при схеме 4.
+
+Optional preflight / проверка без замены:
+powershell -NoProfile -ExecutionPolicy Bypass -File Update-LocalCloud.ps1 -InstallPath "E:\InstallerLocalCloud" -Plan
+
+Rollback / откат приложения:
+powershell -NoProfile -ExecutionPolicy Bypass -File Update-LocalCloud.ps1 -InstallPath "E:\InstallerLocalCloud" -Rollback -BackupPath "E:\InstallerLocalCloud\_update_backup\ACTUAL_BACKUP_FOLDER"
+
+Substitute your real installation/snapshot path. Compatible app-only rollback
+retains current DB/settings. Explicit -RestoreDatabase additionally restores
+metadata to the backup time and asks for RESTORE. Original media are not removed.
+Подставьте реальные пути. -RestoreDatabase возвращает метаданные на момент
+снимка и требует RESTORE; более поздние изменения метаданных будут потеряны.
+
+Application backups under _update_backup do NOT copy all original media.
+Копия updater НЕ является резервной копией всех медиа.
+
+Setup can also update the same recognized app folder through the checked engine.
+Do not manually overwrite a running installation or delete its database.
+Setup также обновляет распознанную папку через updater. Не перезаписывайте
+работающую программу вручную и не удаляйте базу.

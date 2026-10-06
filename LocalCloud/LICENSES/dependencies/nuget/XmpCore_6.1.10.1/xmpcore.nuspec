@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>XmpCore</id>
+    <version>6.1.10.1</version>
+    <authors>Drew Noakes</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://www.adobe.com/devnet/xmp/library/eula-xmp-library-java.html</licenseUrl>
+    <projectUrl>https://github.com/drewnoakes/xmp-core-dotnet/</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/drewnoakes/xmp-core-dotnet/master/docs/logo-512px.png</iconUrl>
+    <description>.NET library for working with the Extensible Metadata Platform (XMP)
+
+This library is a port of Adobe's Java XMP SDK to .NET. It was initially ported by Yakov Danila and Nathanael Jones. Now maintained by Drew Noakes and contributors on GitHub.
+
+The API should be familiar to users of Adobe's XMPCore, though it has been modified in places to better suit .NET development.</description>
+    <copyright>Copyright 2015-2021</copyright>
+    <tags>XMP Metadata Exif IPTC ICC</tags>
+    <repository type="git" url="https://github.com/drewnoakes/xmp-core-dotnet.git" />
+    <dependencies>
+      <group targetFramework=".NETFramework3.5" />
+      <group targetFramework=".NETStandard1.0">
+        <dependency id="NETStandard.Library" version="1.6.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework3.5" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework3.5" />
+      <frameworkAssembly assemblyName="System.Xml.Linq" targetFramework=".NETFramework3.5" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

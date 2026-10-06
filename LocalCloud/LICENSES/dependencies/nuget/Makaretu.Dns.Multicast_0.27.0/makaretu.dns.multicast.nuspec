@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Makaretu.Dns.Multicast</id>
+    <version>0.27.0</version>
+    <title>Multicast DNS</title>
+    <authors>Richard Schneider</authors>
+    <owners>Richard Schneider</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/richardschneider/net-mdns</projectUrl>
+    <description>A simple Multicast Domain Name Service based on RFC 6762.  Can be used as both a client (sending queries) or a server (responding to queries).</description>
+    <releaseNotes>https://github.com/richardschneider/net-mdns/releases</releaseNotes>
+    <copyright>© 2018-2019 Richard Schneider</copyright>
+    <tags>multicast mdns dns zeroconf</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.6.1">
+        <dependency id="Common.Logging" version="3.4.1" exclude="Build,Analyzers" />
+        <dependency id="IPNetwork2" version="2.1.2" exclude="Build,Analyzers" />
+        <dependency id="Makaretu.Dns" version="2.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.4">
+        <dependency id="Common.Logging" version="3.4.1" exclude="Build,Analyzers" />
+        <dependency id="IPNetwork2" version="2.1.2" exclude="Build,Analyzers" />
+        <dependency id="Makaretu.Dns" version="2.0.1" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="System.Net.NetworkInformation" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Common.Logging" version="3.4.1" exclude="Build,Analyzers" />
+        <dependency id="IPNetwork2" version="2.1.2" exclude="Build,Analyzers" />
+        <dependency id="Makaretu.Dns" version="2.0.1" exclude="Build,Analyzers" />
+        <dependency id="Tmds.LibC" version="0.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

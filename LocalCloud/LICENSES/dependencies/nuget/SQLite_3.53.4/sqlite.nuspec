@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SQLite</id>
+    <version>3.53.4</version>
+    <authors>Eric Sink</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://sqlite.org/</projectUrl>
+    <description>This package contains builds of the native SQLite code for various platforms.  
+    These builds have "e_sqlite3" as the base name.  The first three numbers in the version number of this package indicate the version of SQLite that was used to build it.  The fourth number, if there is one, is incremented as needed for packaging-specific changes.</description>
+    <copyright>Copyright 2014-2026 SourceGear, LLC</copyright>
+    <tags>sqlite</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.1" />
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+</package>

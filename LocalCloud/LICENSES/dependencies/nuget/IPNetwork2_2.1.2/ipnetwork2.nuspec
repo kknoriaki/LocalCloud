@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>IPNetwork2</id>
+    <version>2.1.2</version>
+    <title>IPNetwork utility classes for .Net</title>
+    <authors>Luc Dvchosal</authors>
+    <owners>Luc Dvchosal</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/lduchosal/ipnetwork/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/lduchosal/ipnetwork</projectUrl>
+    <description>IPNetwork C# library take care of complex network, ip, ipv4, ipv6, netmask, cidr, subnet, subnetting, supernet and supernetting calculation for .Net developpers. It works with IPv4 and IPv6 as well. It is written in C# for .NetStandard and coreclr and has a light and clean API and is fully unit tested.</description>
+    <releaseNotes>dotnetstandard1.3  support
+dotnet46 support
+dotnet45 support
+dotnet40 support
+signed dlls</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>ipnetwork network ip ipv4 ipv6 netmask cidr subnet subnetting supernet supernetting calculation</tags>
+    <repository type="git" url="https://github.com/lduchosal/ipnetwork.git" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.0" />
+      <group targetFramework=".NETFramework4.5" />
+      <group targetFramework=".NETFramework4.6" />
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Core" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.6" />
+      <frameworkAssembly assemblyName="System.Data" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.6" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.0, .NETFramework4.5, .NETFramework4.6" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

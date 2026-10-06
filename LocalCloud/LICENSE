@@ -1,0 +1,75 @@
+LocalCloud Source-Available License 1.0
+Copyright (c) 2026 Ilya Gavrilov. All rights reserved except as granted below.
+
+1. Scope and authorship
+This license applies only to copyrightable first-party LocalCloud source code,
+application assets and documentation owned by the author. LocalCloud was
+created with assistance from AI coding tools, including OpenAI ChatGPT/Codex,
+under the author's direction. This notice does not claim that every AI-generated
+element is independently copyrightable, or that the author owns third-party
+components. Rights are reserved only to the extent recognized by applicable law.
+
+2. Personal use, study and private modification
+You may download and run official LocalCloud releases for personal,
+noncommercial use. You may inspect, build and privately modify the first-party
+source code for personal, noncommercial use. You must retain copyright,
+license, third-party and AI-assistance notices. These permissions do not grant
+permission to redistribute unchanged or lightly modified copies.
+
+3. Republishing copies
+Unless section 4 applies or the author gives separate written permission, you
+may not publish, redistribute, sell, sublicense or present first-party LocalCloud
+source code or binaries as your own release, mirror, hosted service or competing
+product. Renaming the project, changing icons or colors, translating strings,
+bumping a version, rearranging files, fixing a few bugs, or adding a small
+feature does not qualify as substantial transformation. Linking to the author's
+official repository or release is permitted.
+
+4. Substantially transformed derivative projects
+Noncommercial publication of a substantially transformed derivative project is
+permitted if ALL of the following conditions are met:
+(a) substantial original engineering changes the core architecture or workflows
+AND introduces a materially different major feature set; the result must be
+clearly distinguishable from a LocalCloud clone;
+(b) the project uses a distinct name and identity and does not imply endorsement;
+(c) the README and application About/credits prominently identify LocalCloud,
+Ilya Gavrilov, the original repository URL from which the code was obtained,
+and the AI-assisted origin, and summarize the substantial changes;
+(d) this license and the original notices remain with all retained LocalCloud
+first-party portions, and no more restrictive conditions are applied to those
+portions; original additions may have a separate compatible license;
+(e) third-party licenses and applicable law are respected.
+A mere quantity of changed lines is insufficient. When a proposed release does
+not clearly meet these conditions, obtain the author's written permission before
+publication. Commercial derivatives require separate written permission.
+
+Suggested attribution:
+"Based on LocalCloud by Ilya Gavrilov, developed with AI assistance.
+Original source: [actual original repository URL]. Major changes: [description]."
+Replace bracketed fields with real information; do not claim an invented URL.
+
+5. GitHub platform exception and contributions
+Viewing and platform-native forks of a public GitHub repository are permitted
+to the extent required by GitHub's Terms of Service. This exception does not
+grant permission to distribute a clone as an independent product or release.
+Forks and pull requests used to propose changes to the original project are
+permitted, with the original identity, license and notices retained. By submitting
+a contribution you confirm that you have permission to do so and allow the
+author to include it under this license; no unrelated rights are assigned.
+
+6. Third-party components and independent work
+Third-party components remain under their own licenses, including any rights
+to redistribution, modification and source access those licenses grant. This
+license does not restrict such rights. See THIRD_PARTY_NOTICES.md and LICENSES/.
+It does not restrict public-domain material, noncopyrightable ideas or genuinely
+independent implementations that do not copy protected first-party expression.
+No trademark or endorsement rights are granted.
+
+7. Warranty and termination
+The software is provided "AS IS", without warranties to the extent permitted
+by law. To the extent permitted by law the author is not liable for damages
+arising from use. Back up important files. A material breach terminates the
+permissions granted by this license; mandatory statutory rights are unaffected.
+
+This is a custom source-available license, not an OSI open-source license.
+The English text governs; LICENSE.ru.md is an explanatory Russian translation.

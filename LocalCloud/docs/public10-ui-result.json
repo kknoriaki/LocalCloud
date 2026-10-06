@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "volume and mute applied to audio",
+    "music ticks do not mutate gallery",
+    "session restores queue position volume and compact mode without autoplay",
+    "keyboard play and pause",
+    "queue and repeat controls",
+    "music sort and missing tags filter",
+    "MP3 confirmation preview",
+    "music layout at seven viewport widths",
+    "tools direct navigation diagnostics and pause",
+    "downloads direct navigation"
+  ],
+  "errors": []
+}
